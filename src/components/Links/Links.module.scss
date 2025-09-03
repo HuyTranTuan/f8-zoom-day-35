@@ -1,0 +1,55 @@
+.page-navigation {
+    grid-area: sidebar;
+    /* Assign to the 'sidebar' grid area */
+    position: fixed;
+    /* Fix the sidebar's position */
+    top: 0;
+    left: 0;
+    width: 200px;
+    /* Match the grid-template-columns width */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Include padding in the width calculation */
+    overflow-y: auto;
+}
+
+.page-navigation-item {
+    background: #ffffff;
+    color: #333333;
+    border: 2px solid #e0e0e0;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: 0 4px;
+    min-width: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.page-navigation-item.active {
+    background: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.page-navigation-item:hover {
+    background: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+    transform: translateY(-2px);
+}
