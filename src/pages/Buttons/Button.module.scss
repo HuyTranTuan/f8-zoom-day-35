@@ -1,5 +1,3 @@
-@import "../../styles/variable";
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -7,7 +5,7 @@
     gap: 15px;
     margin-left: auto;
     margin-right: auto;
-    background-color: $bg-app;
+    background-color: #f5f5f5;
     margin-top: 50px;
     width: 700px;
     text-align: center;
