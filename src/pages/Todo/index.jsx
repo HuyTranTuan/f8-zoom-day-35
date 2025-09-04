@@ -1,4 +1,5 @@
 import { useState } from "react";
+import TodoItem from "../../components/TodoItem";
 
 function Todo() {
     const todoLocal = JSON.parse(localStorage.getItem("todosReact"));
